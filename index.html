@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Vinil e CDs Antigos</title>
+    <!-- Link para o arquivo de estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho com navegação principal -->
+    <header class="header">
+        <h1 class="logo">Memória Musical</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#history">História</a></li>
+                <li><a href="#shop">Loja</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#facts">Curiosidades</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção inicial com imagem de fundo -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Descubra a magia dos discos de vinil e CDs antigos</h2>
+            <p>Reviva a experiência auditiva clássica com nossa coleção cuidadosamente selecionada de discos e compact discs de épocas inesquecíveis.</p>
+            <a href="#shop" class="btn">Ver produtos</a>
+        </div>
+    </section>
+
+    <!-- Seção de história e contexto -->
+    <section id="history" class="history section">
+        <h2>História dos formatos físicos</h2>
+        <p>
+            A jornada do som gravado começou em 1877, quando Thomas Edison apresentou o <strong>fonógrafo</strong>, um aparelho que gravava e reproduzia áudio em cilindros de folha metálica【815872785949754†L214-L225】. Dez anos depois, o engenheiro alemão Emile Berliner melhorou o conceito e criou o <strong>gramofone</strong>, que utilizava discos planos em vez de cilindros【815872785949754†L233-L244】. 
+        </p>
+        <p>
+            No início do século XX, as gravações eram feitas em discos de <em>shellac</em>, girando a 78 rotações por minuto. Esse formato possuía capacidade limitada e tornou‑se obsoleto rapidamente. Em 1948, a CBS lançou o disco de 12 polegadas e 33 RPM feito de policloreto de vinila, conhecido como LP (<em>long‑play</em>)【815872785949754†L269-L279】. Essa inovação permitiu gravar um álbum completo em cada lado e revolucionou a indústria fonográfica【815872785949754†L282-L289】.
+        </p>
+        <p>
+            Em 1982, a Sony apresentou o <strong>Compact Disc (CD)</strong>. Sua portabilidade e confiabilidade fizeram com que o público migrasse rapidamente para o novo formato【815872785949754†L326-L332】. Durante a década de 1990, as vendas de vinil despencaram. Contudo, o vinil ressurgiu no século XXI: em 2022, os discos de vinil superaram os CDs como o formato físico mais vendido, com 41,3 milhões de unidades contra 33,4 milhões de CDs【556279265412105†L100-L114】. No primeiro semestre de 2023, o vinil respondeu por 72 % da receita de formatos físicos não digitais【556279265412105†L112-L114】.
+        </p>
+        <p>
+            Esse retorno está ligado à nostalgia, ao apelo estético das capas e à experiência sonora quente e analógica que os entusiastas consideram superior aos formatos digitais. Nossa loja celebra essa herança oferecendo itens raros e bem conservados para colecionadores e amantes da música.
+        </p>
+    </section>
+
+    <!-- Seção de produtos em destaque -->
+    <section id="shop" class="shop section">
+        <h2>Produtos em destaque</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="vinyl1.jpg" alt="Toca-discos vintage" class="product-img">
+                <h3>LP – Clássicos do Rock</h3>
+                <p>Disco de vinil 180 g contendo sucessos de rock dos anos 1970 e 1980.</p>
+                <span class="price">R$ 120,00</span>
+                <button class="btn add-cart">Adicionar ao carrinho</button>
+            </div>
+            <div class="product-card">
+                <img src="vinyl2.jpg" alt="Coleção de discos" class="product-img">
+                <h3>Box – Jazz Essential</h3>
+                <p>Coleção de cinco LPs com os grandes nomes do jazz. Edição limitada.</p>
+                <span class="price">R$ 280,00</span>
+                <button class="btn add-cart">Adicionar ao carrinho</button>
+            </div>
+            <div class="product-card">
+                <img src="cd1.jpg" alt="Coleção de CDs" class="product-img">
+                <h3>Kit – CDs de Música Clássica</h3>
+                <p>Conjunto de 10 CDs remasterizados com sinfonias de compositores famosos.</p>
+                <span class="price">R$ 150,00</span>
+                <button class="btn add-cart">Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de vídeo -->
+    <section id="video" class="video section">
+        <h2>Assista a um momento nostálgico</h2>
+        <video controls class="responsive-video">
+            <source src="vinyl_video.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeo.
+        </video>
+    </section>
+
+    <!-- Seção de curiosidades com interação -->
+    <section id="facts" class="facts section">
+        <h2>Curiosidades sobre discos e CDs</h2>
+        <p id="fact-display">Clique no botão para descobrir um fato interessante!</p>
+        <button id="fact-button" class="btn">Mostrar curiosidade</button>
+    </section>
+
+    <!-- Seção de contato -->
+    <section id="contact" class="contact section">
+        <h2>Fale conosco</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E‑mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+        <p id="form-response" class="form-response"></p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2026 Memória Musical. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
